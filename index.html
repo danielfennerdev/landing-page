@@ -1,270 +1,251 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon1.png" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Daniel Fenner</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="image/png" href="img/favicon1.png" />
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Daniel Fenner</title>
+    </head>
 
-  <body>
-    <!-- <div id="under-construction">CURRENTLY UNDER DEVELOPMENT</div> -->
-    <main>
-      <!-- <canvas id="starCanvas"></canvas> -->
-      <div id="hero">
-        <img
-          class="avatar"
-          alt="profile pic of daniel fenner"
-          src="img/profilepic.webp"
-        />
-        <h1>@danielfenner</h1>
-        <h5>Juno addict, peanut butter lover, nap enthusiast</h5>
-        <div class="buttonlist">
-          <a href="https://www.twitch.tv/danielfenner">
-            Twitch
-            <?xml version="1.0" encoding="UTF-8"?><svg
-              width="24px"
-              height="24px"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              color="#000000"
-            >
-              <path
-                d="M11 8.5L9.8 9L2.35172 12.3856C2.13752 12.4829 2 12.6965 2 12.9318V13.0682C2 13.3035 2.13752 13.5171 2.35172 13.6144L11.1724 17.6238C11.6982 17.8628 12.3018 17.8628 12.8276 17.6238L21.6483 13.6144C21.8625 13.5171 22 13.3035 22 13.0682V12.9318C22 12.6965 21.8625 12.4829 21.6483 12.3856L14.2 9L13 8.5"
-                stroke="#000000"
-                stroke-width="1.5"
-              ></path>
-              <path
-                d="M22 13V17.112C22 17.3482 21.8615 17.5623 21.6462 17.6592L12.8207 21.6307C12.2988 21.8655 11.7012 21.8655 11.1793 21.6307L2.35378 17.6592C2.13847 17.5623 2 17.3482 2 17.112V13"
-                stroke="#000000"
-                stroke-width="1.5"
-              ></path>
-              <path
-                d="M12 8C10.3431 8 9 6.65685 9 5C9 3.34315 10.3431 2 12 2C13.6569 2 15 3.34315 15 5C15 6.65685 13.6569 8 12 8Z"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M11 8V13C11 13.5523 11.4477 14 12 14V14C12.5523 14 13 13.5523 13 13V8"
-                stroke="#000000"
-                stroke-width="1.5"
-              ></path>
-              <path
-                d="M16 13H17"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </a>
-          <a href="https://www.youtube.com/danielfenner">
-            YouTube<?xml version="1.0" encoding="UTF-8"?><svg
-              width="24px"
-              height="24px"
-              stroke-width="1.5"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              color="#000000"
-            >
-              <path
-                d="M14 12L10.5 14V10L14 12Z"
-                fill="#000000"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M2 12.7075V11.2924C2 8.39705 2 6.94939 2.90549 6.01792C3.81099 5.08645 5.23656 5.04613 8.08769 4.96549C9.43873 4.92728 10.8188 4.8999 12 4.8999C13.1812 4.8999 14.5613 4.92728 15.9123 4.96549C18.7634 5.04613 20.189 5.08645 21.0945 6.01792C22 6.94939 22 8.39705 22 11.2924V12.7075C22 15.6028 22 17.0505 21.0945 17.9819C20.189 18.9134 18.7635 18.9537 15.9124 19.0344C14.5613 19.0726 13.1812 19.1 12 19.1C10.8188 19.1 9.43867 19.0726 8.0876 19.0344C5.23651 18.9537 3.81097 18.9134 2.90548 17.9819C2 17.0505 2 15.6028 2 12.7075Z"
-                stroke="#000000"
-                stroke-width="1.5"
-              ></path>
-            </svg>
-          </a>
-          <a href="https://www.youtube.com/@danielfenner2">
-            YouTube 2<?xml version="1.0" encoding="UTF-8"?><svg
-              width="24px"
-              height="24px"
-              stroke-width="1.5"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              color="#000000"
-            >
-              <path
-                d="M14 12L10.5 14V10L14 12Z"
-                fill="#000000"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M2 12.7075V11.2924C2 8.39705 2 6.94939 2.90549 6.01792C3.81099 5.08645 5.23656 5.04613 8.08769 4.96549C9.43873 4.92728 10.8188 4.8999 12 4.8999C13.1812 4.8999 14.5613 4.92728 15.9123 4.96549C18.7634 5.04613 20.189 5.08645 21.0945 6.01792C22 6.94939 22 8.39705 22 11.2924V12.7075C22 15.6028 22 17.0505 21.0945 17.9819C20.189 18.9134 18.7635 18.9537 15.9124 19.0344C14.5613 19.0726 13.1812 19.1 12 19.1C10.8188 19.1 9.43867 19.0726 8.0876 19.0344C5.23651 18.9537 3.81097 18.9134 2.90548 17.9819C2 17.0505 2 15.6028 2 12.7075Z"
-                stroke="#000000"
-                stroke-width="1.5"
-              ></path>
-            </svg>
-          </a>
-          <a href="https://www.tiktok.com/@danfenner">
-            TikTok<?xml version="1.0" encoding="UTF-8"?><svg
-              width="24px"
-              height="24px"
-              stroke-width="1.5"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              color="#000000"
-            >
-              <path
-                d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M10 12C8.34315 12 7 13.3431 7 15C7 16.6569 8.34315 18 10 18C11.6569 18 13 16.6569 13 15V6C13.3333 7 14.6 9 17 9"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </a>
-          <a href="https://www.twitter.com/danielfenner">
-            X<?xml version="1.0" encoding="UTF-8"?><svg
-              width="24px"
-              height="24px"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              color="#000000"
-            >
-              <path
-                d="M16.8198 20.7684L3.75317 3.96836C3.44664 3.57425 3.72749 3 4.22678 3H6.70655C6.8917 3 7.06649 3.08548 7.18016 3.23164L20.2468 20.0316C20.5534 20.4258 20.2725 21 19.7732 21H17.2935C17.1083 21 16.9335 20.9145 16.8198 20.7684Z"
-                stroke="#000000"
-                stroke-width="1.5"
-              ></path>
-              <path
-                d="M20 3L4 21"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-            </svg>
-          </a>
-          <a href="https://www.instagram.com/danielfenner">
-            Instagram<?xml version="1.0" encoding="UTF-8"?><svg
-              width="24px"
-              height="24px"
-              stroke-width="1.5"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              color="#000000"
-            >
-              <path
-                d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
-                stroke="#000000"
-                stroke-width="1.5"
-              ></path>
-              <path
-                d="M17.5 6.51L17.51 6.49889"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </a>
-          <a href="https://bsky.app/profile/danielfenner.bsky.social">
-            Bluesky<?xml version="1.0" encoding="UTF-8"?><svg
-              width="24px"
-              height="24px"
-              viewBox="0 0 600 530"
-              stroke-width="1.5"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              color="#000000"
-            >
-              <path
-                d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"
-                stroke="#000000"
-                stroke-width="25"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </a>
-          <a href="https://www.discord.gg/danielfenner">
-            Discord<?xml version="1.0" encoding="UTF-8"?><svg
-              width="24px"
-              height="24px"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              color="#000000"
-            >
-              <path
-                d="M5.5 16C10.5 18.5 13.5 18.5 18.5 16"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M15.5 17.5L16.5 19.5C16.5 19.5 20.6713 18.1717 22 16C22 15 22.5301 7.85339 19 5.5C17.5 4.5 15 4 15 4L14 6H12"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M8.52832 17.5L7.52832 19.5C7.52832 19.5 3.35699 18.1717 2.02832 16C2.02832 15 1.49823 7.85339 5.02832 5.5C6.52832 4.5 9.02832 4 9.02832 4L10.0283 6H12.0283"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M8.5 14C7.67157 14 7 13.1046 7 12C7 10.8954 7.67157 10 8.5 10C9.32843 10 10 10.8954 10 12C10 13.1046 9.32843 14 8.5 14Z"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M15.5 14C14.6716 14 14 13.1046 14 12C14 10.8954 14.6716 10 15.5 10C16.3284 10 17 10.8954 17 12C17 13.1046 16.3284 14 15.5 14Z"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </main>
+    <body>
+        <!-- <div id="under-construction">CURRENTLY UNDER DEVELOPMENT</div> -->
+        <main>
+            <!-- <canvas id="starCanvas"></canvas> -->
+            <div id="hero">
+                <img
+                    class="avatar"
+                    alt="profile pic of daniel fenner"
+                    src="img/profilepic.webp"
+                />
+                <h1>@danielfenner</h1>
+                <h5>Juno addict, peanut butter lover, nap enthusiast</h5>
+                <div class="buttonlist">
+                    <a href="https://www.twitch.tv/danielfenner">
+                        Twitch <?xml version="1.0" encoding="UTF-8"?><svg
+                            width="24px"
+                            height="24px"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            color="#000000"
+                        >
+                            <path
+                                d="M11 8.5L9.8 9L2.35172 12.3856C2.13752 12.4829 2 12.6965 2 12.9318V13.0682C2 13.3035 2.13752 13.5171 2.35172 13.6144L11.1724 17.6238C11.6982 17.8628 12.3018 17.8628 12.8276 17.6238L21.6483 13.6144C21.8625 13.5171 22 13.3035 22 13.0682V12.9318C22 12.6965 21.8625 12.4829 21.6483 12.3856L14.2 9L13 8.5"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                            ></path>
+                            <path
+                                d="M22 13V17.112C22 17.3482 21.8615 17.5623 21.6462 17.6592L12.8207 21.6307C12.2988 21.8655 11.7012 21.8655 11.1793 21.6307L2.35378 17.6592C2.13847 17.5623 2 17.3482 2 17.112V13"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                            ></path>
+                            <path
+                                d="M12 8C10.3431 8 9 6.65685 9 5C9 3.34315 10.3431 2 12 2C13.6569 2 15 3.34315 15 5C15 6.65685 13.6569 8 12 8Z"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                            <path
+                                d="M11 8V13C11 13.5523 11.4477 14 12 14V14C12.5523 14 13 13.5523 13 13V8"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                            ></path>
+                            <path
+                                d="M16 13H17"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/danielfenner">
+                        YouTube<?xml version="1.0" encoding="UTF-8"?><svg
+                            width="24px"
+                            height="24px"
+                            stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            color="#000000"
+                        >
+                            <path
+                                d="M14 12L10.5 14V10L14 12Z"
+                                fill="#000000"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                            <path
+                                d="M2 12.7075V11.2924C2 8.39705 2 6.94939 2.90549 6.01792C3.81099 5.08645 5.23656 5.04613 8.08769 4.96549C9.43873 4.92728 10.8188 4.8999 12 4.8999C13.1812 4.8999 14.5613 4.92728 15.9123 4.96549C18.7634 5.04613 20.189 5.08645 21.0945 6.01792C22 6.94939 22 8.39705 22 11.2924V12.7075C22 15.6028 22 17.0505 21.0945 17.9819C20.189 18.9134 18.7635 18.9537 15.9124 19.0344C14.5613 19.0726 13.1812 19.1 12 19.1C10.8188 19.1 9.43867 19.0726 8.0876 19.0344C5.23651 18.9537 3.81097 18.9134 2.90548 17.9819C2 17.0505 2 15.6028 2 12.7075Z"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@danielfenner2">
+                        YouTube 2<?xml version="1.0" encoding="UTF-8"?><svg
+                            width="24px"
+                            height="24px"
+                            stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            color="#000000"
+                        >
+                            <path
+                                d="M14 12L10.5 14V10L14 12Z"
+                                fill="#000000"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                            <path
+                                d="M2 12.7075V11.2924C2 8.39705 2 6.94939 2.90549 6.01792C3.81099 5.08645 5.23656 5.04613 8.08769 4.96549C9.43873 4.92728 10.8188 4.8999 12 4.8999C13.1812 4.8999 14.5613 4.92728 15.9123 4.96549C18.7634 5.04613 20.189 5.08645 21.0945 6.01792C22 6.94939 22 8.39705 22 11.2924V12.7075C22 15.6028 22 17.0505 21.0945 17.9819C20.189 18.9134 18.7635 18.9537 15.9124 19.0344C14.5613 19.0726 13.1812 19.1 12 19.1C10.8188 19.1 9.43867 19.0726 8.0876 19.0344C5.23651 18.9537 3.81097 18.9134 2.90548 17.9819C2 17.0505 2 15.6028 2 12.7075Z"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@danfenner">
+                        TikTok<?xml version="1.0" encoding="UTF-8"?><svg
+                            width="24px"
+                            height="24px"
+                            stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            color="#000000"
+                        >
+                            <path
+                                d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                            <path
+                                d="M10 12C8.34315 12 7 13.3431 7 15C7 16.6569 8.34315 18 10 18C11.6569 18 13 16.6569 13 15V6C13.3333 7 14.6 9 17 9"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.twitter.com/danielfenner">
+                        X<?xml version="1.0" encoding="UTF-8"?><svg
+                            width="24px"
+                            height="24px"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            color="#000000"
+                        >
+                            <path
+                                d="M16.8198 20.7684L3.75317 3.96836C3.44664 3.57425 3.72749 3 4.22678 3H6.70655C6.8917 3 7.06649 3.08548 7.18016 3.23164L20.2468 20.0316C20.5534 20.4258 20.2725 21 19.7732 21H17.2935C17.1083 21 16.9335 20.9145 16.8198 20.7684Z"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                            ></path>
+                            <path
+                                d="M20 3L4 21"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/danielfenner">
+                        Instagram<?xml version="1.0" encoding="UTF-8"?><svg
+                            width="24px"
+                            height="24px"
+                            stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            color="#000000"
+                        >
+                            <path
+                                d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                            <path
+                                d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                            ></path>
+                            <path
+                                d="M17.5 6.51L17.51 6.49889"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                        </svg>
+                    </a>
 
-    <!-- <section>
+                    <a href="https://www.discord.gg/danielfenner">
+                        Discord<?xml version="1.0" encoding="UTF-8"?><svg
+                            width="24px"
+                            height="24px"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            color="#000000"
+                        >
+                            <path
+                                d="M5.5 16C10.5 18.5 13.5 18.5 18.5 16"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                            <path
+                                d="M15.5 17.5L16.5 19.5C16.5 19.5 20.6713 18.1717 22 16C22 15 22.5301 7.85339 19 5.5C17.5 4.5 15 4 15 4L14 6H12"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                            <path
+                                d="M8.52832 17.5L7.52832 19.5C7.52832 19.5 3.35699 18.1717 2.02832 16C2.02832 15 1.49823 7.85339 5.02832 5.5C6.52832 4.5 9.02832 4 9.02832 4L10.0283 6H12.0283"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                            <path
+                                d="M8.5 14C7.67157 14 7 13.1046 7 12C7 10.8954 7.67157 10 8.5 10C9.32843 10 10 10.8954 10 12C10 13.1046 9.32843 14 8.5 14Z"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                            <path
+                                d="M15.5 14C14.6716 14 14 13.1046 14 12C14 10.8954 14.6716 10 15.5 10C16.3284 10 17 10.8954 17 12C17 13.1046 16.3284 14 15.5 14Z"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- <section>
       <div class="section-container">
         <h2>
           <?xml version="1.0" encoding="UTF-8"?><svg
@@ -508,10 +489,10 @@
       </div>
     </section> -->
 
-    <!-- <footer>
+        <!-- <footer>
       Site created by
       <a href="https://www.twitter.com/danielfenner">Daniel Fenner</a>
     </footer> -->
-    <script src="script.js"></script>
-  </body>
+        <script src="script.js"></script>
+    </body>
 </html>
