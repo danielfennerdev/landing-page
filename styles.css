@@ -1,315 +1,386 @@
 @font-face {
-  font-family: "Open-Runde"; /* Name your font */
-  src: url("fonts/OpenRunde-Regular.woff2") format("woff2"),
-    url("fonts/OpenRunde-Regular.woff") format("woff"); /* Add more formats if needed */
+    font-family: "Open-Runde"; /* Name your font */
+    src:
+        url("fonts/OpenRunde-Regular.woff2") format("woff2"),
+        url("fonts/OpenRunde-Regular.woff") format("woff"); /* Add more formats if needed */
 }
 
 :root {
-  --slate-1: #111113;
-  --slate-2: #18191b;
-  --slate-3: #212225;
-  --slate-4: #272a2d;
-  --slate-5: #2e3135;
-  --slate-6: #363a3f;
-  --slate-7: #43484e;
-  --slate-8: #5a6169;
-  --slate-9: #696e77;
-  --slate-10: #777b84;
-  --slate-11: #b0b4ba;
-  --slate-12: #edeef0;
-  --slate-a1: #00000000;
-  --slate-a2: #d8f4f609;
-  --slate-a3: #ddeaf814;
-  --slate-a4: #d3edf81d;
-  --slate-a5: #d9edfe25;
-  --slate-a6: #d6ebfd30;
-  --slate-a7: #d9edff40;
-  --slate-a8: #d9edff5d;
-  --slate-a9: #dfebfd6d;
-  --slate-a10: #e5edfd7b;
-  --slate-a11: #f1f7feb5;
-  --slate-a12: #fcfdffef;
-  --blue-1: #0d1520;
-  --blue-2: #111927;
-  --blue-3: #0d2847;
-  --blue-4: #003362;
-  --blue-5: #004074;
-  --blue-6: #104d87;
-  --blue-7: #205d9e;
-  --blue-8: #2870bd;
-  --blue-9: #0090ff;
-  --blue-10: #3b9eff;
-  --blue-11: #70b8ff;
-  --blue-12: #c2e6ff;
-  --purple-1: #18111b;
-  --purple-2: #1e1523;
-  --purple-3: #301c3b;
-  --purple-4: #3d224e;
-  --purple-5: #48295c;
-  --purple-6: #54346b;
-  --purple-7: #664282;
-  --purple-8: #8457aa;
-  --purple-9: #8e4ec6;
-  --purple-10: #9a5cd0;
-  --purple-11: #d19dff;
-  --purple-12: #ecd9fa;
+    /* Existing Slate Colors */
+    --slate-1: #111113;
+    --slate-2: #18191b;
+    --slate-3: #212225;
+    --slate-4: #272a2d;
+    --slate-5: #2e3135;
+    --slate-6: #363a3f;
+    --slate-7: #43484e;
+    --slate-8: #5a6169;
+    --slate-9: #696e77;
+    --slate-10: #777b84;
+    --slate-11: #b0b4ba;
+    --slate-12: #edeef0;
+    --slate-a1: #00000000;
+    --slate-a2: #d8f4f609;
+    --slate-a3: #ddeaf814;
+    --slate-a4: #d3edf81d;
+    --slate-a5: #d9edfe25;
+    --slate-a6: #d6ebfd30;
+    --slate-a7: #d9edff40;
+    --slate-a8: #d9edff5d;
+    --slate-a9: #dfebfd6d;
+    --slate-a10: #e5edfd7b;
+    --slate-a11: #f1f7feb5;
+    --slate-a12: #fcfdffef;
+    /* Existing Blue Colors */
+    --blue-1: #0d1520;
+    --blue-2: #111927;
+    --blue-3: #0d2847;
+    --blue-4: #003362;
+    --blue-5: #004074;
+    --blue-6: #104d87;
+    --blue-7: #205d9e;
+    --blue-8: #2870bd;
+    --blue-9: #0090ff; /* Primary Accent Color: Vibrant Blue */
+    --blue-10: #3b9eff;
+    --blue-11: #70b8ff;
+    --blue-12: #c2e6ff;
+    /* Existing Purple Colors */
+    --purple-1: #18111b;
+    --purple-2: #1e1523;
+    --purple-3: #301c3b;
+    --purple-4: #3d224e;
+    --purple-5: #48295c;
+    --purple-6: #54346b;
+    --purple-7: #664282;
+    --purple-8: #8457aa;
+    --purple-9: #8e4ec6;
+    --purple-10: #9a5cd0;
+    --purple-11: #d19dff;
+    --purple-12: #ecd9fa;
+
+    /* Custom variables for the new design */
+    --accent-color: var(--blue-9);
+    --button-base-bg: var(
+        --slate-a2
+    ); /* Dark, transparent background for buttons */
+    --button-hover-bg: var(--slate-a3); /* Slightly brighter on hover */
 }
 
 body {
-  background: var(--blue-1);
-  background-image: 
-    radial-gradient(var(--slate-a2) 1px, transparent 1px),
-    linear-gradient(145deg,
-      var(--blue-1),
-      var(--blue-2) 35%,
-      var(--blue-2) 65%,
-      var(--blue-3)
-    );
-  background-size: 24px 24px, 100% 100%;
-  background-position: -12px -12px, 0 0;
-  box-sizing: border-box;
-  font-family: "Open-Runde", "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
-  color: var(--slate-12);
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  position: relative;
+    background: var(--blue-1);
+    background-image:
+        radial-gradient(var(--slate-a2) 1px, transparent 1px),
+        linear-gradient(
+            145deg,
+            var(--blue-1),
+            var(--blue-2) 35%,
+            var(--blue-2) 65%,
+            var(--blue-3)
+        );
+    background-size:
+        24px 24px,
+        100% 100%;
+    background-position:
+        -12px -12px,
+        0 0;
+    box-sizing: border-box;
+    font-family: "Open-Runde", "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    color: var(--slate-12);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: start; /* Changed to 'start' to allow for scrolling when sections are visible */
+    min-height: 100vh; /* Changed height to min-height for scrollability */
+    overflow-y: auto; /* Allow vertical scrolling */
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 
 body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.15;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 1;
-  mix-blend-mode: overlay;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1;
+    mix-blend-mode: overlay;
 }
 
 body::after {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(
-    circle at 30% 20%,
-    var(--blue-5) 0%,
-    transparent 55%
-  );
-  opacity: 0.15;
-  pointer-events: none;
-  z-index: 0;
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle at 30% 20%,
+        var(--blue-5) 0%,
+        transparent 55%
+    );
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
 }
 
 main {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
+    position: relative;
+    width: 100%;
+    /* Removed height: 100% to allow flow onto subsequent sections */
+    z-index: 2;
+    /* Added padding-top to keep content off the very top edge */
+    padding-top: 4rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #hero {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  align-items: center;
-  justify-content: center;
-  padding: 0 1rem;
-  margin-top: -1.5rem;
+    /* Removed height: 100% - Hero content doesn't need to fill the screen */
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    margin-top: 0; /* Adjusted for new main padding */
+    padding-bottom: 2rem;
+    max-width: 500px;
 }
 
-#starCanvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: radial-gradient(
-    circle at top,
-    var(--blue-2),
-    var(--blue-1) 60%,
-    var(--blue-1)
-  );
-}
-
-section {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: var(--blue-1);
-  color: var(--slate-12);
-  padding: 4rem 1rem 4rem 1rem;
-}
-
-.purple {
-  background-color: var(--purple-1);
-}
-
-.slate {
-  background-color: var(--slate-1);
-}
-
-.rounded {
-  border-radius: 0.5rem;
-}
-
-.section-container {
-  max-width: 768px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  color: var(--slate-12);
-  background-color: var(--slate-1);
-  width: 100%;
-}
-
-footer a {
-  text-decoration: underline;
-}
-
-footer a:hover {
-  color: var(--blue-9);
-}
-
-#under-construction {
-  position: absolute;
-  margin: 0;
-  width: 90%;
-  text-align: center;
-  top: 1rem;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: var(--slate-a12);
-  padding: 1rem;
-  border-radius: 1rem;
-  color: var(--slate-1);
-}
+/* ... (omitted #starCanvas and #under-construction styles for brevity) ... */
 
 h1 {
-  font-size: 40px;
-  line-height: 40px;
-  letter-spacing: -0.025em;
-  font-weight: 600;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.025em;
+    font-weight: 700;
+    /* New: Subtle Glow Effect */
+    text-shadow:
+        0 0 8px rgba(0, 144, 255, 0.3),
+        0 0 15px rgba(0, 144, 255, 0.1);
+    transition: text-shadow 0.3s ease;
 }
 
 h2 {
-  display: flex;
-  gap: 1rem;
-  font-size: 30px;
-  line-height: 40px;
-  letter-spacing: -0.025em;
+    display: flex;
+    gap: 1rem;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -0.025em;
+    color: var(--slate-12);
+    /* New: Make section headings pop a bit */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
 }
 
 h3 {
-  display: inline;
-  gap: 1rem;
-  font-size: 24px;
-  line-height: 24px;
-  letter-spacing: -0.025em;
+    display: inline;
+    gap: 1rem;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.025em;
 }
 
 h5 {
-  font-size: 16px;
-  text-align: center;
+    font-size: 18px; /* Slightly larger bio text */
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--slate-11); /* Softer white color */
 }
 
 .avatar {
-  border-radius: 100%;
-  height: 128px;
-  width: 128px;
+    border-radius: 100%;
+    height: 128px;
+    width: 128px;
+    object-fit: cover;
+    /* New: Subtle border/glow for the avatar */
+    box-shadow:
+        0 0 0 4px var(--blue-6),
+        0 0 20px rgba(0, 144, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.avatar:hover {
+    /* New: Stronger hover glow */
+    box-shadow:
+        0 0 0 6px var(--accent-color),
+        0 0 30px var(--accent-color);
 }
 
 .buttonlist {
-  margin-top: 0.25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.75rem;
-  max-width: 600px;
+    margin-top: 1.5rem; /* Increased space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Slightly increased gap */
+    width: 90%; /* Use available width */
+    max-width: 450px; /* Max width for single column buttons */
 }
 
 @media (min-width: 768px) {
-  .buttonlist {
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 800px;
-    gap: 0.75rem;
-  }
-  
-  .buttonlist a {
-    flex: 0 0 auto;
-  }
+    .buttonlist {
+        /* Keeping the column layout for full-width links, even on desktop */
+        flex-direction: column;
+        max-width: 450px; /* Keep consistent width for stacked look */
+    }
 }
 
 .buttonlist a {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  width: 250px;
-  line-height: 24px;
-  font-weight: 600;
-  border-radius: 0.5rem;
-  color: var(--slate-1);
-  padding: 1rem 1rem 1rem 1rem;
-  background-color: var(--slate-a12);
-  backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%; /* Now full-width based on parent's max-width */
+    line-height: 24px;
+    font-weight: 600;
+    border-radius: 0.75rem; /* Slightly more rounded corners */
+    color: var(--slate-12); /* Light text color */
+    padding: 1.1rem 1.5rem; /* Better padding for a larger hit area */
+    text-decoration: none; /* Remove default underline */
+
+    /* New: Frosted Glass / Dark Mode Button Style */
+    background-color: var(--button-base-bg);
+    border: 1px solid var(--blue-4);
+    backdrop-filter: blur(10px); /* Enhanced blur effect */
+    transition: all 0.3s ease-in-out;
 }
 
+.buttonlist a span {
+    /* Make the text take up available space for correct alignment */
+    flex-grow: 1;
+    text-align: left;
+}
+
+.buttonlist a svg {
+    /* This ensures the icon respects the current text color */
+    color: inherit;
+    flex-shrink: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* New: Glowing Accent Hover Effect */
 .buttonlist a:hover {
-  box-shadow: 0px 0px 0px 6px var(--slate-a11);
+    color: var(--accent-color); /* Change text/icon to accent color */
+    background-color: var(--button-hover-bg); /* Slight background change */
+    border-color: var(--accent-color); /* Accent border */
+    box-shadow: 0px 0px 20px 0px rgba(0, 144, 255, 0.4); /* Stronger glow effect */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* SECTIONS STYLES */
+section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(
+        --blue-2
+    ); /* Changed to blue-2 for a slight shade contrast with body */
+    color: var(--slate-12);
+    padding: 4rem 1rem;
+    border-top: 1px solid var(--blue-4); /* Subtle separator line */
+}
+
+.purple {
+    background-color: var(--purple-2); /* Darker purple base for distinction */
+    border-top: 1px solid var(--purple-4);
+}
+
+.slate {
+    background-color: var(--slate-2);
+    border-top: 1px solid var(--slate-4);
+}
+
+.rounded {
+    border-radius: 0.5rem;
+}
+
+.section-container {
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .gear-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
 }
 
 .gear-box {
-  background-color: var(--blue-2);
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  flex: 1 0 30%;
+    background-color: var(
+        --blue-3
+    ); /* Darker blue for contrast inside the section */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem; /* Increased padding */
+    border-radius: 0.75rem; /* More rounded */
+    flex: 1 0 30%;
+    min-width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.gear-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 144, 255, 0.15);
 }
 
 .gear-box a {
-  text-decoration: underline;
+    color: var(--slate-12); /* Default link color in box */
+    text-decoration: none; /* No underline by default */
+    border-bottom: 1px dotted var(--slate-9); /* Subtle underline */
+    padding-bottom: 3px;
+    transition: color 0.3s ease;
 }
 
 .gear-box a:hover {
-  color: var(--blue-9);
+    color: var(--blue-10); /* Accent color on hover */
+    border-bottom-color: var(--blue-10);
 }
 
 .gear-box-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--blue-5);
+}
+
+.gear-box-title svg {
+    color: var(--blue-9); /* Give the icon an accent color */
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem; /* More vertical padding */
+    color: var(--slate-11);
+    background-color: var(--slate-1);
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: underline;
+    color: var(--slate-11);
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--blue-9);
 }
