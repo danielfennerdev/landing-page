@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake by @danielfennerdev</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js" type="module"></script>
+    <script defer src="snake.js" type="module"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="signature">
+      by <a href="https://www.danielfenner.com">@danielfennerdev</a>
+    </div>
+    <div class="title" id="title"><h5>Snake</h5></div>
+
+    <main>
+      <modal>
+        <h3>How to Play</h3>
+        <p>Use the W, A, S, and D keys to move the snake.</p>
+        <p>Eat the food to grow and earn points.</p>
+        <p>Don't eat your own body!</p>
+        <button id="start-button">Start Game</button>
+      </modal>
+      <section class="game-area">
+        <h5 class="score-display" id="score-display">Score: 0</h5>
+        <div class="board-container" id="board-container"></div>
+      </section>
+    </main>
+  </body>
+</html>
