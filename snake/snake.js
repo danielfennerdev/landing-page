@@ -45,6 +45,7 @@ class Board {
   score = 0;
 
   input = "e";
+  currentDirection = "e";
 
   coordToIndex(x, y) {
     return y * this.width + x;
@@ -59,6 +60,10 @@ class Board {
   updateSnake(snake) {
     this.grid.fill(null);
     snake.move(this.input);
+
+    // After the snake moves, record the direction that was used so
+    // input validation compares against the actual movement direction.
+    this.currentDirection = this.input;
 
     let foodIndex = this.coordToIndex(this.food[0], this.food[1]);
     this.grid[foodIndex] = "food";
@@ -98,7 +103,12 @@ class Board {
 
   updateInput(keypress) {
     const oppositeDirections = { n: "s", e: "w", s: "n", w: "e" };
-    if (keypress !== oppositeDirections[this.input]) {
+    // Prevent reversing into the snake by rejecting inputs that are
+    // opposite of the current movement direction. We compare against
+    // `currentDirection` (the direction used for the most recent move)
+    // so multiple rapid keypresses between frames cannot chain into
+    // an immediate 180° reversal.
+    if (keypress !== oppositeDirections[this.currentDirection]) {
       this.input = keypress;
     }
   }
