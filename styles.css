@@ -191,6 +191,17 @@ h5 {
     transform: translateY(-2px);
 }
 
+.buttonlist a.link-prominent {
+    background-color: var(--surface0);
+    border-color: var(--mauve);
+}
+
+.buttonlist a.link-prominent:hover {
+    background-color: var(--surface1);
+    border-color: var(--pink);
+    box-shadow: 0px 0px 25px 0px rgba(245, 194, 231, 0.4);
+}
+
 section {
     display: flex;
     justify-content: center;
